@@ -1,0 +1,89 @@
+/* Basic Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff; /* Soft blue for a professional background */
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #333;
+    margin: 40px 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #e1e1e1;
+    padding: 14px; /* Comfortable padding for readability */
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #007bff; /* Vibrant blue for headers */
+    color: white;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light grey for even rows */
+}
+
+tr:hover {
+    background-color: #e7f3ff; /* Soft blue on row hover */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Subtle scaling effect on hover */
+}
+
+/* Responsive Table Design */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Horizontal scrolling on small screens */
+    }
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
